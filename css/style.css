@@ -3,49 +3,55 @@ body {
   background-color: #fffcf4;
 }
 
-.tableizer-table {
+#tableizer-table {
   width: 100%;
   font-size:14px;
   border: 1px;
   margin:0;
   box-sizing:border-box;
-  background-color: #ADD8E6;
-  /* color: #ddd */
+  padding: 2px;
+  /* background-color: #ADD8E6; */
 }
 
 
 #tableizer-table td {
-  padding: 4px;
+  /* padding: 4px; */
   margin: 4px;
-  border: 1px 0;
- background-color: #1f233e;
- color: #ddd;
+  /* border: 1px solid black; */
+  border-collapse: collapse;
+ /* background-color: #1f233e; */
+ /* color: #ddd; */
 
 }
-#tableizer-table th {
-     padding: 4px;
-  margin: 4px;
-    border: 1px 0;
-position:sticky;
-  background-color: black;
-  color: #FFF;
+#tableizer-table thead {
+  background-color:#254a93;
+  color: #f0f0f0;
+  position:sticky;
+
   top:0;
 
 }
  #tableizer-table tr:hover {
 
-   background-color:black;
-   color:black;
- 
+   background-color:#254a93;
+   color: #f0f0f0;
  }
 #myInput {
   border: none;
   background-color: transparent;
   border-bottom: 1px solid #00cc99;
-  width: 85%;
+  width: 100%;
   margin-top: 12px;
   outline: none;
   font-size: 18px;
+}
+
+@media(max-width: 500px){
+ 
+  #tableizer-table, #tableizer-table thead, #tableizer-table tbody, #tableizer-table tr, #tableizer-table td {
+    display:inline-flexbox;
+    width: 100%;
+  }
 }
 
 .layout_padding {
